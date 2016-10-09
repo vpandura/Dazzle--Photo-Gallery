@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href=" ">
+
+<link href="_css/main.css" rel="stylesheet" media="screen, projection">
+</head>
+<body>
+<header id="pageHeader" role="banner">
+  <hgroup>
+    <h1><a href="index.htm">Dazzle</a></h1>
+    <h2>Fine Photography</h2>
+  </hgroup>
+</header>
+<nav id="mainNav" role="navigation" class="cf">
+  <h2>Site navigation</h2>
+  <ul class="topMenu expand">
+    <li class="hover">
+      <h3>Galleries</h3>
+      <ul class="submenu expand">
+        
+        <li><a href="gallery/recent.htm" title="recent galleries" class="recent">Recent Galleries</a></li>
+        <li><a href="gallery/archived.htm" title="archived galleries" class="archived">Archived Galleries</a></li>
+        
+      </ul>
+    </li>
+    <li><a href="blog.htm" title="Read our adventures" class="blog">Blog</a></li>
+    
+    <li><a href="contact.htm" title="Get in touch" class="Contact Us">Interact</a></li>
+    
+    <li><a href="about.htm" title="Know us" class="about">About</a></li>
+  </ul>
+</nav>
+<section id="content" role="main">
+  <article id="contact" class="cf">
+    <h1>Interact with us</h1>
+    <section class="social">
+    <h2>Feel free to call us, we could totally hang.</h2>
+    <p><a href="" title="ring ring ring" class="phone">000-000-0000</a></p>
+    <h2>Contact us using social media platform</h2>
+    <ul class="connect">
+    <li><a href="http://twitter.com" title="follow us on Twitter" class="twitter">Twitter</a></li>
+    <!-- <li><a href="http://www.flickr.com/" title="Join our Flickr group" class="flickr">Flickr</a></li>
+    <li><a href="http://www.facebook.com" title="Be our friend...PLEASE" class="facebook">Facebook</a></li>
+    <li><a href="http://linkedin.com" title="Please join our professional network on LinkedIn" class="linked">LinkedIn</a></li> -->
+    <li><a href="https://plus.google.com" title="help us figure out Google+" class="google">Google+</a></li>
+    <li><a href="http://www.youtube.com" class="youtube">YouTube</a></li>
+    </ul>
+    </section>
+    <section class="contact">
+    <h2>About your self</h2>
+    <form id="frmContact" action="" method="post">
+    <fieldset title="About you">
+    <legend><span>About you</span></legend>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" tabindex="10" placeholder="Your name" required>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" tabindex="20" placeholder="valid email" required>
+      <label for="website">Personal website</label>
+      <input type="url" name="website" id="website" tabindex="30" placeholder="website" required>
+    </fieldset>
+    <fieldset title="Your turn">
+    <legend><span>Your turn</span></legend>
+     <p>What, exactly then, are you after?</p>
+       <input type="radio" name="intent" value="suggest" id="suggest" tabindex="40">
+       <label for="suggest" class="inline">Suggest a city</label><br>
+         <input type="radio" name="intent" value="submit" id="submit" tabindex="50">
+       <label for="submit" class="inline">Submit my own gallery</label><br>
+          <input type="radio" name="intent" value="comment" id="comment" tabindex="60">
+       <label for="comment" class="inline">Comment on a gallery</label><br>
+        <input type="radio" name="intent" value="friends" id="friends" tabindex="70">
+       <label for="friends" class="inline"> Make friends</label><br>
+         <label for="discourse">Pour out your heart</label>
+         <textarea id="discourse" name="discourse" tabindex="80" rows="7" placeholder="This is where your thoughts go">
+         </textarea>
+         <input type="submit" name="submit" id="submit" value="Oh really?" tabindex="90">
+    </fieldset>
+    </form>
+    </section>
+  </article>
+  <aside role="complementary">
+    <nav class="archives">
+      <h2>Archived Galleries</h2>
+      <ul>
+        <li><a href="charlotte.htm" title="charlotte">Charlotte</a></li>
+        <li><a href="miami.htm" title="miami">Miami</a></li>
+        <li><a href="denver.htm" title="denver">Denver</a></li>
+        <li><a href="boston.htm" title="boston">Boston</a></li>
+        <li><a href="cincinnati.htm" title="cincinnati">Cincinnati</a></li>
+        
+      </ul>
+    </nav>
+    <section class="contest">
+      <h2>This month's contest</h2>
+      <img src="_images/contest.jpg" width="200" height="200" alt="This month's contest">
+      <p>Guess where is this Picture?<span class="enter"><a href="#" title="enter our contest">Enter</a></span></p>
+    </section>
+    <section class="contest">
+      <h2>Previous contest</h2>
+      <img src="_images/previous.jpg" width="200" height="200" alt="This month's contest">
+      <h3>Cultural District, Denver CO</h3>
+      <p>Congratulations Vaishali, who answered it correctly</p>
+    </section>
+  </aside>
+</section>
+<footer id="pageFooter">
+  <form action="http://desolve.org" method="post" class="search-form" role="search">
+    <label for="search">Looking for something?</label>
+    <input type="search" placeholder="Search" title="Search" class="q" name="search" id="search">
+    <input type="submit" class="submit" value="Go" name="submit">
+  </form>
+  <p><a href="http://www.twitter.com">twitter</a></p>
+  <p class="notice">&copy; 2015 Dazzle</p>
+</footer>
+<script src="_scripts/modernizr.custom.js"></script>
+<script>
+//use the modernizr load to load up external scripts. This will load the scripts asynchronously, but the order listed matters. Although it will load all scripts in parallel, it will execute them in the order listed
+Modernizr.load([
+{
+    load: [  
+        'http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js',
+		'_scripts/desolve.js'  
+    ]
+},
+{
+	// test for media query support, if not load respond.js
+    test : Modernizr.mq('only all'),
+    // If not, load the respond.js file
+    nope : '/_scripts/respond.js' 
+}
+]); 
+</script>
+</body>
+</html>
